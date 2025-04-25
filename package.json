@@ -3,17 +3,22 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
   "scripts": {
-    "dev": "vite",
+    "dev": "nvm use && vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.5.13"
+    "vue": "^3.4.21",
+    "vue-router": "^4.0.13"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.2.3",
-    "vite": "^6.2.4",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.1.5",
     "vite-plugin-vue-devtools": "^7.7.2"
   }
 }
