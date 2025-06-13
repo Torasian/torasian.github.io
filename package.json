@@ -8,7 +8,7 @@
     "npm": ">=8.0.0"
   },
   "scripts": {
-    "dev": "nvm use && vite",
+    "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -17,8 +17,11 @@
     "vue-router": "^4.0.13"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.4",
-    "vite": "^5.1.5",
-    "vite-plugin-vue-devtools": "^7.7.2"
+    "@vitejs/plugin-vue": "^4.5.2",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "vite": "^4.5.1",
+    "vite-plugin-vue-devtools": "^7.0.0"
   }
 }

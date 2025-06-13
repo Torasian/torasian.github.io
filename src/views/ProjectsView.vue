@@ -3,22 +3,14 @@
         <div class="container">
             <h1>My Projects</h1>
             <div class="projects-grid">
-                <div v-for="project in projects" :key="project.id" class="project-card">
-                    <div class="project-image" :style="{ backgroundImage: `url(${project.image})` }">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a :href="project.demo" target="_blank" class="btn">View Demo</a>
-                                <a :href="project.github" target="_blank" class="btn">View Code</a>
-                            </div>
+                <div v-for="project in projects" :key="project.slug" class="project-card">
+                    <router-link :to="`/projects/${project.slug}`" class="project-link">
+                        <div class="project-image" :style="{ backgroundImage: `url(${project.hero_image})` }"></div>
+                        <div class="project-info">
+                            <h3>{{ project.project_title }}</h3>
+                            <p>{{ project.description }}</p>
                         </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>{{ project.title }}</h3>
-                        <p>{{ project.description }}</p>
-                        <div class="project-tags">
-                            <span v-for="tag in project.tags" :key="tag" class="tag">{{ tag }}</span>
-                        </div>
-                    </div>
+                    </router-link>
                 </div>
             </div>
         </div>
@@ -26,35 +18,7 @@
 </template>
 
 <script setup>
-const projects = [
-    {
-        id: 1,
-        title: 'E-commerce Platform',
-        description: 'A modern e-commerce platform built with Vue.js and Node.js, featuring real-time inventory management and secure payment processing.',
-        image: 'https://picsum.photos/600/400?random=1',
-        demo: '#',
-        github: '#',
-        tags: ['Vue.js', 'Node.js', 'MongoDB', 'Stripe']
-    },
-    {
-        id: 2,
-        title: 'Task Management App',
-        description: 'A collaborative task management application with real-time updates, team features, and progress tracking.',
-        image: 'https://picsum.photos/600/400?random=2',
-        demo: '#',
-        github: '#',
-        tags: ['React', 'Firebase', 'Material-UI']
-    },
-    {
-        id: 3,
-        title: 'Portfolio Website',
-        description: 'A responsive portfolio website showcasing my work and skills, built with Vue.js and modern CSS techniques.',
-        image: 'https://picsum.photos/600/400?random=3',
-        demo: '#',
-        github: '#',
-        tags: ['Vue.js', 'CSS3', 'Vue Router']
-    }
-]
+import projects from '../data/projects-index.json'
 </script>
 
 <style scoped>
@@ -82,6 +46,12 @@ h1 {
     gap: 2rem;
 }
 
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .project-card {
     background: white;
     border-radius: 8px;
@@ -98,44 +68,6 @@ h1 {
     height: 200px;
     background-size: cover;
     background-position: center;
-    position: relative;
-}
-
-.project-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.project-card:hover .project-overlay {
-    opacity: 1;
-}
-
-.project-links {
-    display: flex;
-    gap: 1rem;
-}
-
-.btn {
-    padding: 0.5rem 1rem;
-    background: #3498db;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    transition: background 0.3s ease;
-}
-
-.btn:hover {
-    background: #2980b9;
 }
 
 .project-info {

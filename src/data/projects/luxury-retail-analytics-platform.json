@@ -1,0 +1,59 @@
+{
+    "slug": "luxury-retail-analytics-platform",
+    "project_title": "Luxury Retail Analytics Platform",
+    "description": "A comprehensive analytics platform for luxury retail stores, providing real-time insights into customer behavior and sales performance.",
+    "institution": "IBM",
+    "company_logo": "https://picsum.photos/200/100?random=2",
+    "hero_image": "https://picsum.photos/1200/600?random=2",
+    "industry": "Retail & Analytics",
+    "my_role": "Full Stack Developer & Data Visualization Specialist",
+    "client_name": "Harrods",
+    "year": 2022,
+    "date": "10/06/2022",
+    "skills": [
+        "Data Visualization",
+        "Full Stack Development",
+        "Real-time Analytics",
+        "UI/UX Design",
+        "API Development"
+    ],
+    "tools": [
+        "React",
+        "D3.js",
+        "Python",
+        "PostgreSQL",
+        "Docker",
+        "AWS"
+    ],
+    "images": [
+        {
+            "url": "https://picsum.photos/800/600?random=5",
+            "caption": "Dashboard overview"
+        },
+        {
+            "url": "https://picsum.photos/800/600?random=6",
+            "caption": "Customer behavior analytics"
+        }
+    ],
+    "main_content": "The Luxury Retail Analytics Platform was developed to provide Harrods with real-time insights into store performance and customer behavior. The platform integrates data from multiple sources including POS systems, customer tracking, and inventory management to provide a comprehensive view of store operations.\n\nThe solution features interactive dashboards, predictive analytics for inventory management, and customer behavior tracking. The platform has helped increase sales by 25% through better inventory management and personalized customer experiences.",
+    "process": {
+        "discovery": "Analyzed existing data systems and identified key metrics for tracking",
+        "design": "Created intuitive dashboards focusing on key performance indicators",
+        "development": "Built a scalable platform using React and Python",
+        "testing": "Conducted extensive testing with real store data",
+        "deployment": "Implemented the platform across all Harrods locations"
+    },
+    "project_video": "https://example.com/video2.mp4",
+    "metrics": {
+        "sales_increase": "25%",
+        "inventory_accuracy": "98%",
+        "customer_satisfaction": "92%"
+    },
+    "testimonial": {
+        "quote": "The analytics platform has given us unprecedented insights into our business operations.",
+        "author": "Michael Brown",
+        "position": "CTO, Harrods"
+    },
+    "featured": true,
+    "award": "Innovation in Retail Award"
+}

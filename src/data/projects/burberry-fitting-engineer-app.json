@@ -1,0 +1,64 @@
+{
+    "slug": "burberry-fitting-engineer-app",
+    "project_title": "Burberry Fitting Engineer App",
+    "description": "A mobile app that helps fitting engineers log garment amendments on the fly, streamlining the quality control process.",
+    "institution": "IBM",
+    "company_logo": "https://picsum.photos/200/100?random=1",
+    "hero_image": "https://picsum.photos/1200/600?random=1",
+    "industry": "Fashion & Technology",
+    "my_role": "Lead Software Developer & UX Designer",
+    "client_name": "Burberry",
+    "year": 2023,
+    "date": "15/03/2023",
+    "skills": [
+        "UI/UX Design",
+        "Mobile Development",
+        "Front-end Development",
+        "Back-end Development",
+        "API Integration",
+        "Quality Assurance"
+    ],
+    "tools": [
+        "Figma",
+        "Ionic",
+        "Angular",
+        "Node.js",
+        "MongoDB",
+        "AWS"
+    ],
+    "images": [
+        {
+            "url": "https://picsum.photos/800/600?random=2",
+            "caption": "Initial wireframes and user flow"
+        },
+        {
+            "url": "https://picsum.photos/800/600?random=3",
+            "caption": "Final UI design implementation"
+        },
+        {
+            "url": "https://picsum.photos/800/600?random=4",
+            "caption": "Mobile app in action"
+        }
+    ],
+    "main_content": "The Burberry Fitting Engineer App was developed to revolutionize how fitting engineers document and track garment amendments. The app allows engineers to capture detailed measurements, take photos, and log amendments in real-time, significantly reducing the time spent on paperwork and improving accuracy.\n\nKey challenges included ensuring offline functionality for factory environments with limited connectivity, implementing a robust image capture system, and creating an intuitive interface for quick data entry. The solution resulted in a 60% reduction in documentation time and a 40% decrease in errors.",
+    "process": {
+        "discovery": "Conducted extensive user research with fitting engineers to understand their workflow and pain points",
+        "design": "Created wireframes and prototypes focusing on quick data entry and offline functionality",
+        "development": "Built a hybrid mobile app using Ionic and Angular, with a Node.js backend",
+        "testing": "Implemented comprehensive testing across various devices and network conditions",
+        "deployment": "Rolled out the app to all Burberry manufacturing facilities with training sessions"
+    },
+    "project_video": "https://example.com/video.mp4",
+    "metrics": {
+        "time_saved": "60%",
+        "error_reduction": "40%",
+        "user_adoption": "95%"
+    },
+    "testimonial": {
+        "quote": "The app has transformed how our fitting engineers work, making the process more efficient and accurate.",
+        "author": "Sarah Johnson",
+        "position": "Head of Quality Control, Burberry"
+    },
+    "featured": true,
+    "award": "Client Technical Excellence Award"
+}
