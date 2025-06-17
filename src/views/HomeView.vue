@@ -4,7 +4,7 @@
         <section class="hero" :style="{ backgroundImage: `url(${currentProject.hero_image})` }">
             <div class="hero-content">
                 <div class="hero-text">
-                    <div class="text-4xl uppercase font-bold text-white">Hello</div>
+
                     <h1 class="text-5xl font-bold text-white mb-4">William Hawken</h1>
                     <p class="text-2xl text-white/90">Multidisciplinary Designer & Front End Developer</p>
                 </div>
